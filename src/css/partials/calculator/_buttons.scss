@@ -1,0 +1,33 @@
+button {
+  font-weight: bold;
+  border: none;
+  padding: .8rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 2px;
+  position: relative;
+
+  @each $name, $color in $colors-map {
+    &.btn-#{$name} {
+      background-color: $color;
+      transition: background-color .1s;
+
+      &:active { background-color: darken($color, 5%) }
+    }
+  }
+
+  &:focus { outline: none }
+  &.erase { 
+    font-size: 1rem;
+    padding: 1rem 0rem; 
+  }
+
+  &.clear,
+  &.zero {
+    grid-column: 1 / 3;
+  }
+
+  &.equals {
+    color: white;
+  }
+}

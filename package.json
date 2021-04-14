@@ -1,0 +1,39 @@
+{
+  "hostname": "http://joaohamerski.github.io/react-calculator",
+  "name": "react-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "production": "mix --production",
+    "gh-page": "gh-pages -d public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@tippyjs/react": "^4.2.5",
+    "animate.css": "^4.1.1",
+    "classnames": "^2.3.1",
+    "laravel-mix": "^6.0.16",
+    "lodash": "^4.17.21",
+    "mathjs": "^9.3.2",
+    "normalize.css": "^8.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-transition-group": "^4.4.1"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.13.13",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.0-beta.0",
+    "react-refresh": "^0.10.0",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1"
+  }
+}

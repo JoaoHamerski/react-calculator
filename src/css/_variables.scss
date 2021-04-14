@@ -1,0 +1,20 @@
+$dark: #0A0A0A;
+$primary: #357DED;
+$secondary: #A3A5A1;
+$white: #FFFFFF;
+$light-grey: lighten($secondary, 25%); 
+
+$background-color: lighten(#F5F5F5, 1%);
+
+$colors-map: (
+  "white": $white,
+  "dark": $dark,
+  "primary": $primary, 
+  "secondary": $secondary,
+  "light-grey": $light-grey, 
+);
+
+$calculator-width: 250px;
+$calculator-height: 367.5px;
+
+$fa-font-path: "../fonts/fontawesome";

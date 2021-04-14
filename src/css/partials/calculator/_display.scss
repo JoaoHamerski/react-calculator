@@ -1,0 +1,33 @@
+.calculator-display {
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: end;
+  grid-column: 1 / 5;
+  text-align: right;
+  height: 100px;
+  padding: .5rem;
+  font-size: 1.7rem;
+  overflow-y: auto;
+  word-break: break-all;
+  letter-spacing: 1.2px;
+  position: relative;
+
+  .calculator-last-operation {
+    font-size: .9rem;
+    color: darken($secondary, 10%);
+  }
+  
+  .history-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: .5rem;
+    font-size: 1rem;
+    color: $primary;
+
+    &:hover {
+      color: lighten($primary, 10%);
+      cursor: pointer;
+    }
+  }
+}
