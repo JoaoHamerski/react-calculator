@@ -4,9 +4,10 @@
 **Demo:** https://joaohamerski.github.io/react-calculator/
 
 ### Todo
-- Adicionar inserção de parenteses para priorizar ordem das operações
-- Permitir digitação de valores negativos
-- Substituir a palavra "Infinito" pelo símbolo infinito no histórico para ocupar menos espaço
+- Adicionar inserção de parenteses para priorizar ordem das operações.
+- Permitir digitação de valores negativos.
+- Substituir a palavra "Infinito" pelo símbolo infinito no histórico para ocupar menos espaço.
+- Digitação com teclado e atalhos.
 
 ## Imagens demo
 ![Imagem demo 01](./public/dist/images/demo-01.png)
