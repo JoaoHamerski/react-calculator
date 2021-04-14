@@ -1,5 +1,5 @@
 # react-calculator
-**Calculadora** simples feita em React.js
+**Calculadora** simples feita com React.js
 
 **Demo:** https://joaohamerski.github.io/react-calculator/
 
