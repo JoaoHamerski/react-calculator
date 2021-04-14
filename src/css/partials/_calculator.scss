@@ -1,16 +1,17 @@
 .calculator {
   position: relative;
   width: $calculator-width;
-  min-height: $calculator-height;
+  height: $calculator-height;
   color: $dark;
   font-family: 'Nunito', sans-serif;
   box-shadow: 0 0 7px rgba(0, 0, 0, .2);
   background-color: $background-color;
 
   .calculator-app {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 3px;
+    height: $calculator-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   @import 'calculator/all';

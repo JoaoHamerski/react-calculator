@@ -38,7 +38,11 @@ const operand = (state, action, currentOperand) => {
   }
 }
 
-const operator = (state, action) => {
+const operator = (state, action, currentOperand) => {
+  if (currentOperand.charAt(currentOperand.length - 1) === ',') {
+    state.operation = state.operation.substring(0, state.operation.length - 1)
+  }
+
   if (_.isEmpty(state.operation)) {
     return state
   }
@@ -85,6 +89,14 @@ const erase = (state, currentOperand) => {
 }
 
 const comma = (state, currentOperand) => {
+  if (! _.isEmpty(state.result)) {
+    return {
+      ...state, 
+      operation: '0', 
+      result: ''
+    }
+  }
+
   // Previne multiplas virgulas em cada operando
   if (currentOperand == '' || currentOperand.includes(','))
     return state
