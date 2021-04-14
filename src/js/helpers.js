@@ -96,8 +96,10 @@ export const strLimit = (str, limit, end = '...') => {
   if (newStr.length > limit) {
     newStr = newStr.substring(0, limit)
 
-    for (let entity of entities) {
-      newStr = newStr.replace('|', entity)
+    if (entities) {
+      for (let entity of entities) {
+        newStr = newStr.replace('|', entity)
+      }
     }
 
     return newStr.concat(end)

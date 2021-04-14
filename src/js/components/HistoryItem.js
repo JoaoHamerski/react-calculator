@@ -7,12 +7,12 @@ function HistoryItemOperation({operation, applyOperation}) {
   return (
     <Tippy
       content={<span dangerouslySetInnerHTML={{ __html: operation }}></span>}
-      disabled={strLength(operation, true) <= 10}
+      disabled={strLength(operation, true) <= 8}
     >
       <span
         dangerouslySetInnerHTML={{
           __html: strLimit(
-            operation, 10
+            operation, 8
           )
         }}
         className="operation"
@@ -26,13 +26,13 @@ function HistoryItemResult({result, applyOperation}) {
   return (
     <Tippy
       content={result}
-      disabled={strLength(result, true) <= 10}
+      disabled={strLength(result, true) <= 8}
     >
       <span
         className="result"
         onClick={() => { applyOperation(result) }}
       >
-        {strLimit(result, 10)}
+        {strLimit(result, 8)}
       </span>
     </Tippy>
   )
