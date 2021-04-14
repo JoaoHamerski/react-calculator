@@ -1,6 +1,6 @@
 .calculator-history {
   .history-items {
-    max-height: calc(#{$calculator-height} - 37.5px);
+    height: calc(#{$calculator-height} - 27.6px);
     overflow-y: auto;
     overflow-x: hidden;
     padding: .25rem .75rem;
